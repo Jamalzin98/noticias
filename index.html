@@ -17,13 +17,16 @@
     
 </body>
 <body>
-    <header class="header-mobile">
+    <header>
      <img src="./assets/images/logo.svg" alt="Logo do site noticias W.">
 
-     <button class="escurecer">
+     <button>
         <img src="./assets/images/icon-menu.svg" alt="icone do menu hamburguer">
      </button>
-     <nav class="abrir">
+
+     
+     <nav class="mobile">
+
         <button>
             <img src="./assets/images/icon-menu-close.svg" alt="Icone de X para fechar menu">
         </button>
@@ -33,12 +36,26 @@
         <a href="#">Trending</a>
         <a href="#">Categorias</a>
      </nav>
+    
+     <nav class="desktop">
+        <a href="#">Home</a>
+        <a href="#">Novo</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categorias</a>
+     </nav>
+    
     </header>
+    
+   
 
     <main>
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
-
+            <picture>
+               <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+            </picture>
+           
             <h1> O futuro brilhante da web</h1>
 
             <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
@@ -63,13 +80,17 @@
         </section>
 
         <section class="terceira-secao">
+
             <div>
                 <img src="./assets/images/image-retro-pcs.jpg" alt="Imagem de computadores antigos">
-                <strong>01</strong>
-                <h2>Revivendo PCs antigos</h2>
-                <p>E se Pcs antigos pudessem receber peças modernas?</p>
-            </div>
+                <div>
+                    <strong>01</strong>
+                    <h2>Revivendo PCs antigos</h2>
+                    <p>E se Pcs antigos pudessem receber peças modernas?</p>
+                </div>
+            </div>                                                               
 
+        
             <div>
                 <img src="./assets/images/image-top-laptops.jpg" alt="Imagem de laptop">
                 <div>
